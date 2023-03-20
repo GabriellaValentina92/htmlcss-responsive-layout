@@ -220,14 +220,14 @@ img{
 .left h4{
     color: white;
     text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 5rem;
 }
 
 .left p{
     color: white;
     font-size: 0.8rem;
     line-height: 1.5rem;
+    padding-top: 3rem;
 }
 
 .box-both .right{
@@ -236,11 +236,12 @@ img{
     border-radius: 2rem;
     padding: 2rem 2rem;
     margin-top: 8rem;
+    margin-bottom: 1rem;
 } 
 
 .right h4{
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-bottom: 1rem;
 }
 
@@ -261,3 +262,53 @@ img{
     border-radius: 4rem;
 }
 
+/* Main- section Testimonials*/
+
+.contents div{
+    text-align: center;
+    font-size: 0.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.contents h2{
+    text-align: center;
+    margin-bottom: 0.8rem;
+    color: var(--background-color);
+}
+
+.contents p{
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+} 
+
+.card-photo{
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+    border-radius: 3rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.card-photo .photo img{
+    min-width: 0;
+    border-radius: 4rem;
+    overflow: hidden;
+}
+
+.card-photo .photo{
+    flex: 0 0 30%;
+    margin-left: 1rem;
+}
+
+.card-photo .text{
+    flex: 0 0 60%;
+    margin-left: 1rem;
+    color: white;
+}
+
+.card-photo .text div{
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
