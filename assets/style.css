@@ -26,27 +26,35 @@ header{
     margin: auto;
 }
 
-.menu-item{
+.nav-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 10vh;
 }
 
-.menu-item .logo{
-    padding-right: 30rem;
+.nav-menu .logo{
+    padding-left: 0.5rem;
 }
 
-.menu-item li{
+.items{
+    display: flex;
+}
+
+.items a{
+    padding-right: 1rem;
+}
+
+.nav-menu li{
     list-style: none;
 }
 
-.menu-item a{
+.nav-menu a{
     text-decoration: none;
     color: white;
 }
 
-.menu-item .btn a{
+.nav-menu .btn a{
     color: black;
     background-color: white;
     padding: 0.3rem 0.5rem;
@@ -55,6 +63,7 @@ header{
 
 .hamburger-bar a{
     display: none;
+    padding-right: 0.5rem;
 }
 
 /* media-queries Nav-bar */
@@ -98,3 +107,7 @@ header{
         display: block;
     }
 }
+
+
+/* Main */
+
