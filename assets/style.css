@@ -192,5 +192,72 @@ img{
     padding: 0.6rem 2rem;
 }
 
+/* main- section bg-color violet*/
 
+.bg-color{
+    background-color: var(--background-color);
+}
+
+.box-both{
+    display: flex;
+}
+
+.left img{
+    width: 300px;
+    margin-left: 3rem;
+}
+
+.right img{
+    width: 200px;
+    margin-left: 3rem; 
+}
+
+.box-both .left{
+    flex: 0 0 40%;
+    padding: 2rem 4rem;
+}
+
+.left h4{
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.left p{
+    color: white;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+
+.box-both .right{
+    flex: 0 0 30%;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 2rem 2rem;
+    margin-top: 8rem;
+} 
+
+.right h4{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.right p{
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+
+.btn-arrow{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn-arrow a{
+    background-color: var(--background-color);
+    padding: 0.5rem 0.8rem;
+    border-radius: 4rem;
+}
 
