@@ -320,6 +320,7 @@ img{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    padding-bottom: 2rem;
 }
 
 .benefits .cards{
@@ -367,4 +368,67 @@ img{
     padding: 0.5rem 1.5rem;
     border-radius: 3rem;
 
+}
+
+/* About Us section */
+
+.aboutus{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 5rem;
+    padding: 2rem;
+}
+
+.aboutus .about{
+    flex: 0 0 calc((100% - 5rem) / 2 );
+}
+
+.photo-aboutus{
+    flex: 0 0 40%;
+}
+
+.about h1{
+    font-size: 2rem;
+    color: var(--background-color);
+    margin-bottom: 3rem;
+}
+
+.about p{
+    font-size: 0.7rem;
+    line-height: 2rem;
+}
+
+.about .p-big{
+    margin-bottom: 1.5rem;
+}
+
+.photo-aboutus img{
+    min-width: 0;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 200px;
+}
+
+.photo-aboutus p{
+    color: var(--background-color);
+    font-size: 1rem;
+    font-weight: 600;
+    padding-top: 2rem;
+    padding-right: 3rem;
+}
+
+.btn-linkedin{
+    margin-top: 2rem;
+}
+
+.btn-linkedin a{
+    font-size: 0.7rem;
+    text-decoration: none;
+    background-color: var(--background-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
 }
