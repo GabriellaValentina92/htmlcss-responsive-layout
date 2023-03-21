@@ -129,14 +129,14 @@ header{
 }
 
 .card-double{
-    flex: 0 0 66.666%;
+    flex: 0 0 60%;
     display: flex;
     border-radius: 2rem;
     background-color: var(--card-firstsec);
 }
 
 .card{
-    flex: 0 0 calc((100% - (1rem * 3)) / 3);
+    flex: 0 0 calc((100% - (1rem * 2)) / 3);
     background-color: var(--card-firstsec);
     border-radius: 2rem;
 }
@@ -293,22 +293,78 @@ img{
 
 .card-photo .photo img{
     min-width: 0;
-    border-radius: 4rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 250px;
+    object-fit: cover;
     overflow: hidden;
 }
 
 .card-photo .photo{
     flex: 0 0 30%;
-    margin-left: 1rem;
 }
 
 .card-photo .text{
     flex: 0 0 60%;
-    margin-left: 1rem;
     color: white;
 }
 
 .card-photo .text div{
     margin-top: 1rem;
     font-size: 0.9rem;
+}
+
+/* section- cards benefits*/
+
+.benefits{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.benefits .cards{
+    flex: 0 0 calc((100% - (2rem * 2)) / 3 );
+    background-color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.benefits h2{
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.cards .number{
+    color: var(--background-color);
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.cards .features{
+    color: var(--background-color);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.cards p{
+    font-size: 0.8rem;
+    line-height: 2rem;
+}
+
+.btn-violet{
+    margin: 1.5rem 0;
+}
+
+.cards .btn-violet a{
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    background-color: var(--background-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 3rem;
+
 }
