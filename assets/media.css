@@ -1,0 +1,152 @@
+/* media-queries Nav-bar */
+
+@media screen and (max-width:810px){
+
+    header{
+        max-width: 100%;
+    }
+
+    .nav-bar{
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .items a{
+        display: none;
+    }    
+
+    .hamburger-bar a{
+        display: block;
+    }
+}
+
+@media screen and (max-width:375px){
+
+    header{
+        max-width: 100%;
+    }
+
+    .nav-bar{
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .items a{
+        display: none;
+    } 
+    
+    .hamburger-bar a{
+        display: block;
+    }
+}
+
+/*Main-footer queries*/
+
+@media screen and (max-width:810px){
+
+    .container{
+        width: 100%;
+        margin-inline: auto;
+    }
+
+    .card-box, .card-double, .card{
+        width: 100%;
+    }
+
+    .bg-color{
+        background-color: var(--background-color);
+    }
+
+    .box-both{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .left, .right{
+        width: 100%;
+    }
+
+    .left img{
+        min-width: 0;
+        width: 350px;
+    }
+
+    .right img{
+        min-width: 0;
+        width: 200px;
+    }
+
+    .right img{
+        min-width: 0;
+        width: 200px;
+    }
+
+    .contents{
+        width: 100%;
+    }
+
+    .benefits{
+        width: 100%;
+    }
+
+    .cards{
+        flex: 0 0 calc((100% - (2rem * 2)) / 2 );
+    }
+
+    .aboutus{
+        width: 100%;
+    }
+    
+    .container-small{
+        width: 100%;
+        margin: auto;
+    }  
+    
+    .bg-colorblack{
+        background-color: black;
+    }
+}
+
+@media screen and (max-width:375px){
+
+    .container{
+        width: 100%;
+        margin-inline: auto;
+    }
+    
+    .card-box{
+        flex-direction: column;
+    }
+
+    .card-double, .box-both, .card-photo, .aboutus{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .bg-color{
+        background-color: var(--background-color);
+    }
+
+    .box-both, .left, .right{
+        width: 100%;
+    }
+
+    .contents{
+        width: 100%;
+    }
+
+    .benefits{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .aboutus{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .container-small{
+        width: 100%;
+        margin: auto;
+    }    
+}

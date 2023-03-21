@@ -71,48 +71,6 @@ header{
     padding-right: 0.5rem;
 }
 
-/* media-queries Nav-bar */
-
-@media screen and (max-width:810px){
-
-    header{
-        max-width: 100%;
-    }
-
-    .nav-bar{
-        max-width: 100%;
-        margin: auto;
-    }
-
-    .items a{
-        display: none;
-    }    
-
-    .hamburger-bar a{
-        display: block;
-    }
-}
-
-@media screen and (max-width:375px){
-
-    header{
-        max-width: 100%;
-    }
-
-    .nav-bar{
-        max-width: 100%;
-        margin: auto;
-    }
-
-    .items a{
-        display: none;
-    } 
-    
-    .hamburger-bar a{
-        display: block;
-    }
-}
-
 
 /* Inizio Main - Prima sezione-card */
 
@@ -129,14 +87,14 @@ header{
 }
 
 .card-double{
-    flex: 0 0 60%;
+    flex: 0 0 calc(2 * ((100% - 2 * 1rem) / 3) + 1rem);
     display: flex;
     border-radius: 2rem;
     background-color: var(--card-firstsec);
 }
 
 .card{
-    flex: 0 0 calc((100% - (1rem * 2)) / 3);
+    flex: 0 0 calc((100% - (2 * 1rem)) / 3);
     background-color: var(--card-firstsec);
     border-radius: 2rem;
 }
@@ -148,7 +106,14 @@ header{
 
 .img-phone{
     flex: 0 0 40%;
+    align-self: flex-end;
     padding-top: 4rem;
+}
+
+.img-phone img{
+    min-width: 0;
+    display: block;
+    width: 200px;
 }
 
 .content h4{
@@ -174,10 +139,6 @@ header{
     border-radius: 1rem ;
 }
 
-img{
-    width: 200px;
-}
-
 .card .icon{
     color: var(--header);
     font-size: 5rem;
@@ -192,7 +153,7 @@ img{
     padding: 0.6rem 2rem;
 }
 
-/* main- section bg-color violet*/
+/* main- section planning bg-color violet*/
 
 .bg-color{
     background-color: var(--background-color);
@@ -200,20 +161,24 @@ img{
 
 .box-both{
     display: flex;
+    justify-content: center;  
 }
 
 .left img{
-    width: 300px;
+    min-width: 0;
+    width: 350px;
     margin-left: 3rem;
 }
 
 .right img{
+    min-width: 0;
     width: 200px;
     margin-left: 3rem; 
 }
 
 .box-both .left{
     flex: 0 0 40%;
+    align-self: flex-start;
     padding: 2rem 4rem;
 }
 
@@ -232,11 +197,11 @@ img{
 
 .box-both .right{
     flex: 0 0 30%;
-    background-color: white;
-    border-radius: 2rem;
+    align-self: flex-end;
+    border-radius: 4rem;
     padding: 2rem 2rem;
-    margin-top: 8rem;
     margin-bottom: 1rem;
+    background-color: white;
 } 
 
 .right h4{
@@ -318,6 +283,7 @@ img{
 
 .benefits{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
     padding-bottom: 2rem;
@@ -375,9 +341,10 @@ img{
 .aboutus{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 5rem;
     margin-top: 5rem;
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .aboutus .about{
@@ -417,7 +384,7 @@ img{
     font-size: 1rem;
     font-weight: 600;
     padding-top: 2rem;
-    
+    padding-right: 18rem;
 }
 
 .btn-linkedin{
